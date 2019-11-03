@@ -37,7 +37,7 @@
             background: url(../../assets/images/employee.png) no-repeat center center;
             border: 0px;
             box-shadow: 0px;
-            margin-left: 25px;
+            margin-left: 50px;
             cursor: pointer;
         }
     }
@@ -57,6 +57,7 @@
         font-family: RobotoCondensed-Bold;
         font-size: 60px;
         padding-top: 50px;
+        vertical-align: top;
         &.hours{
             background: url(../../assets/images/hours.png) no-repeat top left 60px;
         }
@@ -79,3 +80,122 @@
     }
 }
 
+@media (max-width: 1000px) {    
+    .home-container{
+        background:none;
+        padding: 30px 0;
+        h2{
+            padding-bottom: 15px;
+        }
+        p{
+            font-size: 30px;
+            line-height: 50px;
+            color: #441732;
+            margin-right: 30px;
+        }
+        .button-container{
+            height: auto;
+            padding: 25px 0;
+            .customer{
+                width: 248px;
+                height: 95px;
+                background: url(../../assets/images/customer.png) no-repeat center center;
+                border: 0px;
+                box-shadow: 0px;
+                margin-left: 50px;
+                cursor: pointer;
+            }
+            .employee{
+                width: 248px;
+                height: 95px;
+                background: url(../../assets/images/employee.png) no-repeat center center;
+                border: 0px;
+                box-shadow: 0px;
+                margin-left: 50px;
+                margin-top: 25px;
+                cursor: pointer;
+            }
+        }
+    }
+    .home-statitics{
+        padding: 15px 0;
+        div{
+            font-size: 45px;
+            min-width: 150px;
+            margin-bottom: 35px;
+            vertical-align: top;
+            &.hours{
+                background: url(../../assets/images/hours.png) no-repeat top left 0px;
+            }
+            &.award{
+                background: url(../../assets/images/award.png) no-repeat top left 0px;
+            }
+            &.readers{
+                background: url(../../assets/images/readers.png) no-repeat top left 0px;
+            }
+            &.sale{
+                background: url(../../assets/images/sale.png) no-repeat top left 0px;
+                background-size: 40px;
+            }
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 500px) {    
+    .home-container{
+        background:none;
+        padding: 30px 0;
+        h2{
+            font-size: 30px;
+            padding-bottom: 5px;
+        }
+        p{
+            font-size: 20px;
+            line-height: 30px;
+            color: #441732;
+            margin-right: 30px;
+        }
+        .button-container{
+            height: auto;
+            padding: 20px 0;
+            .customer{
+                width: 248px;
+                height: 95px;
+            }
+            .employee{
+                margin-left: 50px;
+                margin-top:20px;
+                cursor: pointer;
+            }
+        }
+    }
+    .home-statitics{
+        padding: 15px 0;
+        div{
+            font-size: 45px;
+            min-width: 150px;
+            margin-bottom: 35px;
+            vertical-align: top;
+            &.hours{
+                background: url(../../assets/images/hours.png) no-repeat top left 0px;
+            }
+            &.award{
+                background: url(../../assets/images/award.png) no-repeat top left 0px;
+            }
+            &.readers{
+                background: url(../../assets/images/readers.png) no-repeat top left 0px;
+            }
+            &.sale{
+                background: url(../../assets/images/sale.png) no-repeat top left 0px;
+                background-size: 40px;
+            }
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}

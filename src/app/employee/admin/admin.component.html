@@ -3,8 +3,7 @@
         <span class="title">Book Store</span>
         <span>Add</span>
         <span>Remove</span>
-        <span>Update Count</span>
-        <span>Modify</span>
+        <span>Edit</span>
         <span *ngFor="let sortOption of sortOptions" (click)="sortBooks(sortOption)" [class.active]="selectedSort ==sortOption">{{sortOption}}</span>
     </div>
     <div class="search">
