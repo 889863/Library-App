@@ -1,0 +1,113 @@
+.book-search{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    vertical-align: top;
+    padding-top: 0px;
+    .search{
+        position: relative;
+        margin-bottom: 20px;
+        input{
+            height: 50px;
+            line-height: 40px;
+            width: 310px;
+            border: 1px solid #b1ca3d;
+            border-radius: 33px;
+            padding-left: 20px;
+            padding-right: 50px;
+            font-family: robotoRegular;
+            color:#441732;
+            font-size: 20px;
+            text-transform:capitalize;
+        }
+        .search-button{
+            width: 52px;
+            background: url(../../../assets/images/search.png) #b1ca3d no-repeat;
+            height: 52px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: -52px;
+            margin-top: 1px;
+            position: absolute;
+            background-position: 9px 9px;
+            background-size: 35px 35px;
+            cursor: pointer;
+            &:hover{
+                background: url(../../../assets/images/search.png) #00697e no-repeat;
+                background-position: 9px 9px;
+                background-size: 35px 35px;
+            }
+        }
+        
+    }
+    .sort-options{
+        margin-bottom: 30px;
+        background: #FFF;
+        margin-left: -30px;
+        span{
+            display: inline-block;
+            padding-right: 20px;
+            line-height: 41px;
+            padding-left: 15px;
+            cursor: pointer;
+            color: #041c3f;
+            opacity: .7;
+            text-transform: capitalize;
+        }
+        .title{
+            text-transform: uppercase;
+            line-height:25px;
+            background: #00697e;
+            color: #FFF;
+            padding: 10px;
+            margin-right: 12px;
+            font-family: robotoMedium;
+            opacity: 1;      
+        }
+        .active{
+            opacity: 1; 
+            text-decoration: underline;
+            font-family: robotoMedium;
+        }
+    }
+    .book-list{
+        width: 360px;
+        height: auto;
+        display: inline-block;
+        border: 1px solid green;
+        background: #FFF;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        h2{
+            font-family: robotoRegular;
+            font-size: 22px;
+            font-weight: normal;
+            line-height: 35px;
+            color: #441732;
+        }
+        
+        img{
+            height: 150px;
+            width: 100px;
+            float: left;
+            clear: both;
+            margin-right: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        p{
+            font-family: robotoRegular;
+            font-size: 16px; 
+            span{
+                font-family: robotoMedium;
+                &.active{
+                    color: green;
+                    text-decoration: underline;
+                }
+            }
+            
+        }
+    }
+}

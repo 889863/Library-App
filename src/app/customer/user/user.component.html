@@ -1,0 +1,21 @@
+<section class="book-search">
+    <div class="sort-options">
+        <span class="title">Sort</span>
+        <span *ngFor="let sortOption of sortOptions" (click)="sortBooks(sortOption)" [class.active]="selectedSort ==sortOption">{{sortOption}}</span>
+    </div>
+    <div class="search">
+        <input class="form-control" type="text" name="search" [(ngModel)]="filter" placeholder="Search...">
+        <span class="search-button"></span>
+    </div>
+    <div class="book-container">
+        <div class="book-list" *ngFor="let book of bookList | filter:filter| paginate: { itemsPerPage: 10, currentPage: p}; let i = index  ">
+            <img src={{book.imageLink}} onError="this.src='../../../assets/images/default.jpg';" (click)='readMore(book.link)'>
+            <h2 [class.active]="selectedSort =='Title'">{{ (book.title.length>20)? (book.title | slice:0:20)+'..':(book.title) }}</h2>
+            <p>Author: <span [class.active]="selectedSort =='Author'">{{(book.author.length>20)? (book.author | slice:0:20)+'..':(book.author) }}</span></p>
+            <p>Country: <span [class.active]="selectedSort =='Country'">{{(book.country.length>20)? (book.country | slice:0:20)+'..':(book.country) }}</span></p>
+            <p>year: <span>{{book.year}}</span></p>
+            <p>Language: <span [class.active]="selectedSort =='Language'">{{book.language}}</span></p>
+        </div>
+    </div>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</section>
